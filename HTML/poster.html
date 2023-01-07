@@ -9,6 +9,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
   <link rel="stylesheet" href="../CSS/magnificpopup.css">
+  <link rel="stylesheet" href="../CSS/css.css">
+
 
 
   <style>
@@ -60,14 +62,13 @@
           <div class="card-body bg-dark text-white">
             <h5 class="card-title">Trendyol Poster</h5>
           </div>
-          <a href="../images/JPGtrendyol.jpg" class="image">
             <img
             src="../images/JPGtrendyol.jpg"
             class="card-img-top"
-            alt="..."
-          />
-          </a>
-          
+            alt="Trendyol.jpg"
+            data-toggle="modal"
+            data-target="#TrendyolModal">  
+          </a> 
         </div>
       </div>
       <div class="col-sm-3">
@@ -78,8 +79,9 @@
           <img
             src="../images/GDD.jpg"
             class="card-img-top"
-            alt="..."
-          />
+            alt="GDD.jpg"
+            data-toggle="modal"
+            data-target="#GDDModal"> 
         </div>     
       </div>
       <div class="col-sm-3">
@@ -90,8 +92,9 @@
           <img
             src="../images/LetragamesAfiş.jpg"
             class="card-img-top"
-            alt="..."
-          />
+            alt="LetraGames.jpg"
+            data-toggle="modal"
+            data-target="#LetragamesAfişModal"> 
         </div>
       </div>
       <div class="col-sm-3">
@@ -100,10 +103,11 @@
             <h5 class="card-title">24 Kasım Öğretmenler Günü</h5>
           </div>
           <img
-            src="../images/24Kasım.jpg"
-            class="card-img-top"
-            alt="..."
-          />
+          src="../images/Kasım24.jpg"
+          class="card-img-top"
+          alt="Kasım24.jpg"
+          data-toggle="modal"
+          data-target="#Kasım24Modal"> 
         </div>
       </div>
     </div>
@@ -120,8 +124,9 @@
           <img
             src="../images/KuveytTürk2.jpg"
             class="card-img-top"
-            alt="..."
-          />
+            alt="KuveytTürk.jpg"
+            data-toggle="modal"
+            data-target="#KuveytTürk2Modal"> 
         </div>
       </div>
       <div class="col-sm-3">
@@ -132,8 +137,9 @@
           <img
             src="../images/RGBfakülteStand.jpg"
             class="card-img-top"
-            alt="..."
-          />
+            alt="FakülteStand.jpg"
+            data-toggle="modal"
+            data-target="#FakülteStandModal"> 
         </div>     
       </div>
       <div class="col-sm-3">
@@ -144,8 +150,9 @@
           <img
             src="../images/hukuk.jpg"
             class="card-img-top"
-            alt="..."
-          />
+            alt="hukuk.jpg"
+            data-toggle="modal"
+            data-target="#HukukModal"> 
         </div>
       </div>
       <div class="col-sm-3">
@@ -156,32 +163,163 @@
           <img
             src="../images/coffeeTalk2.jpg"
             class="card-img-top"
-            alt="..."
+            alt="CoffeeTalk.jpg"
+            data-toggle="modal"
+            data-target="#CoffeeTalkModal"> 
           />
         </div>
       </div>
     </div>
 </div>
 
-  <div class="bg-dark text-white">
-    <footer class="container py-5 mt-5">
-      <div class="row">
-        <div class="col-12 col-md">
-          <h5>Yusuf Gülmez</h5>
-          <small class="d-block mb-3 text-muted">©2023</small>
-        </div>
+<div class="modal fade" id="TrendyolModal" tabindex="-1" role="dialog" aria-labelledby="TrendyolModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" style="max-width: 575px; max-height: 575px;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TrendyolModalLabel">Trendyol Afiş</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-    </footer>
+      <div class="modal-body">
+        <img src="../images/JPGtrendyol.jpg" alt="trendyol.jpg" class="img-fluid" style="display: block; margin: auto;">
+      </div>
+    </div>
   </div>
-  
-    <script src="../JS/magnific-popup.js"></script>  
-  
-    <script>
-        $('.image').magnificPopup({
-            type: 'image'
-        });
-    </script>
+</div>
 
+<div class="modal fade" id="GDDModal" tabindex="-1" role="dialog" aria-labelledby="GDDModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" style="max-width: 575px; max-height: 575px;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="GDDModalLabel">GDD Afiş</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="../images/GDD.jpg" alt="GDD.jpg" class="img-fluid" style="display: block; margin: auto;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="LetragamesAfişModal" tabindex="-1" role="dialog" aria-labelledby="LetragamesAfişModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" style="max-width: 575px; max-height: 575px;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="LetragamesAfişModalLabel">Letragames Afiş</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="../images/LetragamesAfiş.jpg" alt="LetragamesAfiş.jpg" class="img-fluid" style="display: block; margin: auto;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Kasım24Modal" tabindex="-1" role="dialog" aria-labelledby="Kasım24ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" style="max-width: 575px; max-height: 575px;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Kasım24ModalLabel">24 Kasım Post</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="../images/Kasım24.jpg" alt="Kasım24.jpg" class="img-fluid" style="display: block; margin: auto;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="KuveytTürk2Modal" tabindex="-1" role="dialog" aria-labelledby="KuveytTürk2ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" style="max-width: 575px; max-height: 575px;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="KuveytTürk2ModalLabel">Kuveyt Türk Afiş</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="../images/KuveytTürk2.jpg" alt="KuveytTürk2.jpg" class="img-fluid" style="display: block; margin: auto;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="FakülteStandModal" tabindex="-1" role="dialog" aria-labelledby="FakülteStandModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" style="max-width: 575px; max-height: 575px;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="FakülteStandModalLabel">Bilişim Sistemleri Topluluğu Afiş</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="../images/RGBfakülteStand.jpg" alt="FakülteStand.jpg" class="img-fluid" style="display: block; margin: auto;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="HukukModal" tabindex="-1" role="dialog" aria-labelledby="HukukModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" style="max-width: 575px; max-height: 575px;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="HukukModalLabel">Hukuk Afiş</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="../images/hukuk.jpg" alt="Hukuk.jpg" class="img-fluid" style="display: block; margin: auto;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="CoffeeTalkModal" tabindex="-1" role="dialog" aria-labelledby="CoffeeTalkModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" style="max-width: 575px; max-height: 575px;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="CoffeeTalkModalLabel">Coffee&Talk Post</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="../images/coffeeTalk2.jpg" alt="CoffeeTalk.jpg" class="img-fluid" style="display: block; margin: auto;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+  
+<!-- Lightbox JS -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.16.0/dist/umd/popper.min.js" integrity="sha384-1rOgV7r5r5Jn7/lNxyZzDCt1A/t68N/7Vu+5y5N7v5o5rCJZVwRZP5x+vNT8W1q3" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <!-- Zoom JS -->
+<script>
+  $(document).ready(function(){
+    $('.zoom').hover(function() {
+      $(this).addClass('transition');
+    }, function() {
+      $(this).removeClass('transition');
+    });
+  });
+</script>
 
 </body>
 </html>
