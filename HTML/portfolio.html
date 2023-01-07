@@ -8,6 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="../CSS/css.css">
+  <title>Portfolio</title>
   
   <style>
     body {
@@ -41,7 +42,7 @@
     </div>
   </nav>
 
-  <div class="container mt-4">
+  <div class="container mt-5">
     
     <div class="row mt-3">
       <h1 class="text-light" 
@@ -55,13 +56,18 @@
               Genellikle Bilişim Sistemleri Topluluğu 
               için yaptığım tasarımları incelemek için...
             </p>
-            <a href="poster.html" class="btn btn-warning">İncele</a>
+            <a href="poster.html">
+              <button type="button">İncele
+              </button>
+            </a>
           </div>
           <img
             src="../images/trendyol.jpg"
             class="card-img-top"
-            alt="..."
-          />
+            alt="trendyol.jpg"
+            class="img-fluid rounded"
+            data-toggle="modal"
+            data-target="#trendyolModal">
         </div>
       </div>
       <div class="col-sm-4">
@@ -72,13 +78,18 @@
               Pixel Art'a olan ilgim çok büyük. Şuan daha başlarda
               olduğumu düşünüyorum. Daha fazlası için...
             </p>
-            <a href="pixelart.html" class="btn btn-warning">İncele</a>
+            <a href="pixelart.html">
+              <button type="button">İncele
+              </button>
+            </a>
           </div>
           <img
             src="../images/StarWars.png"
             class="card-img-top"
-            alt="..."
-          />
+            alt="StarWars.jpg"
+            class="img-fluid rounded"
+            data-toggle="modal"
+            data-target="#StarWarsModal">
         </div>     
       </div>
       <div class="col-sm-4">
@@ -89,28 +100,88 @@
               Unity ile geliştirmiş olduğum oyuna göz atmak isterseniz
               sizi bu tarafa alalım...
             </p>
-            <a href="gamedesign.html" class="btn btn-warning">İncele</a>
+            <a href="gamedesign.html">
+              <button type="button">İncele
+              </button>
+            </a>
           </div>
           <img
             src="../images/game.jpg"
             class="card-img-top"
-            alt="..."
-          />
+            alt="GameDesign.jpg.jpg"
+            class="img-fluid rounded"
+            data-toggle="modal"
+            data-target="#GameDesignModal">
         </div>
       </div>
     </div>
   </div>
-  
-  <div class="bg-dark text-white">
-    <footer class="container py-5 mt-5">
-      <div class="row">
-        <div class="col-12 col-md">
-          <h5>Yusuf Gülmez</h5>
-          <small class="d-block mb-3 text-muted">©2023</small>
-        </div>
+
+  <div class="modal fade" id="trendyolModal" tabindex="-1" role="dialog" aria-labelledby="trendyolModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" style="max-width: 750px; max-height: 750px;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="trendyolModalLabel">Trendyol Afiş</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-    </footer>
+      <div class="modal-body">
+        <img src="../images/trendyol.jpg" alt="Trendyol.jpg" class="img-fluid" style="display: block; margin: auto;">
+      </div>
+    </div>
   </div>
+</div>
+
+<div class="modal fade" id="StarWarsModal" tabindex="-1" role="dialog" aria-labelledby="StarWarsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" style="max-width: 750px; max-height: 750px;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="StarWarsModalLabel">Star Wars</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="../images/StarWars.png" alt="..." class="img-fluid" style="display: block; margin: auto;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="GameDesignModal" tabindex="-1" role="dialog" aria-labelledby="GameDesignModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" style="max-width: 750px; max-height: 750px;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="GameDesignModalLabel">Game Design</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="../images/game.jpg" alt="..." class="img-fluid" style="display: block; margin: auto;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Lightbox JS -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.16.0/dist/umd/popper.min.js" integrity="sha384-1rOgV7r5r5Jn7/lNxyZzDCt1A/t68N/7Vu+5y5N7v5o5rCJZVwRZP5x+vNT8W1q3" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <!-- Zoom JS -->
+<script>
+  $(document).ready(function(){
+    $('.zoom').hover(function() {
+      $(this).addClass('transition');
+    }, function() {
+      $(this).removeClass('transition');
+    });
+  });
+</script>
   
 </body>
 </html>
